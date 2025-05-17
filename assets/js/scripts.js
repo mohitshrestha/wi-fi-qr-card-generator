@@ -39,7 +39,7 @@ function displayWifiDetails(ssid, password) {
   const qrContainer = document.getElementById("qr-container");
 
   const wifiDetailsSSID = document.createElement("p");
-  wifiDetailsSSID.textContent = `<i class='fa fa-wifi'></i> WiFi Name (SSID): ${ssid}`;
+  wifiDetailsSSID.textContent = `WiFi Name (SSID): ${ssid}`;
   qrContainer.appendChild(wifiDetailsSSID);
 
   // Only show password if visible
