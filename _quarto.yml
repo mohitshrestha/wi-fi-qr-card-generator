@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: ""
+  site-url: https://mohitshrestha.github.io/wi-fi-qr-card-generator/
+  google-analytics: "G-X51FE05DVC"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: wi-fi-qr-card-generator.qmd
+        text: <i class='fa fa-wifi'></i> Wi-Fi QR Card Generator
+  page-footer:
+    background: light
+    left: |
+       [Wi-Fi QR Card Generator](https://mohitshrestha.github.io/wi-fi-qr-card-generator/) is distributed under the terms of the [MIT](https://github.com/mohitshrestha/wi-fi-qr-card-generator/blob/main/LICENSE) license. <br> Copyright © 2025-Present <a href="https://www.mohitshrestha.com.np" target="_top">Mohit Shrestha</a>. All rights reserved.
+    right: |
+      Made with [![](assets/media/quarto.png){fig-alt="Quarto Logo" width="84" height="18"}](https://quarto.org/)<br>
+      [View the source at GitHub](https://github.com/mohitshrestha/wi-fi-qr-card-generator)
+  repo-url: https://github.com/mohitshrestha/wi-fi-qr-card-generator
+  repo-actions: [edit, issue]
+        
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: assets/css/styles.css
+    toc: true
+
+
+

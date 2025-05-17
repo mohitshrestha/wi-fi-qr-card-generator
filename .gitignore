@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Quarto
+/.quarto/
+/docs/.quarto/
+/docs/_freeze/
+/_freeze/
+
+# VScode
+/.vscode/
+
+# Ignore Python Environment folder files 
+/.venv/
