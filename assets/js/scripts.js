@@ -57,7 +57,7 @@ function displayBuildUsing() {
 
   const buildUsingDetails = document.createElement("p");
   buildUsingDetails.className = "print-card-subtitle";
-  buildUsingDetails.innerHTML = `Generated using <strong><a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/">Wi-Fi QR Card Generator</a></strong> <br> Developed by <a href="https://mohitshrestha.com.np/">Mohit Shrestha</a> <br> Website: <a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/" target="_blank" style="font-size: 13px;">https://mohitshrestha.github.io/wi-fi-qr-card-generator/</a>`;
+  buildUsingDetails.innerHTML = `Generated using <strong><a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/">Wi-Fi QR Card Generator</a></strong> <br> Developed by <a href="https://mohitshrestha.com.np/">Mohit Shrestha</a> <br> Visit Website: <br> <a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/" target="_blank" style="font-size: 12px;">https://mohitshrestha.github.io/wi-fi-qr-card-generator/</a></p>`;
 
   qrContainer.appendChild(buildUsingDetails);
 }
