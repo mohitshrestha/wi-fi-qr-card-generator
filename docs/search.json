@@ -32,7 +32,7 @@
     "href": "about.html#installation",
     "title": "About",
     "section": "Installation",
-    "text": "Installation\nIf you want to host this project locally:\n\nClone the repository:\ngit clone https://github.com/mohitshrestha/wi-fi-qr-card-generator.git\nNavigate to the project directory:\ncd wi-fi-qr-card-generator\nOpen the index.html file in your browser to get to the homepage.\nOpen wi-fi-qr-card-generator.html to generate WiFi QR Codes."
+    "text": "Installation\nIf you want to host this project locally:\n\nClone the repository:\ngit clone https://github.com/mohitshrestha/wi-fi-qr-card-generator.git\nNavigate to the project directory:\ncd wi-fi-qr-card-generator/docs\nOpen the index.html file in your browser to get to the homepage."
   },
   {
     "objectID": "about.html#how-to-use",
