@@ -85,6 +85,14 @@ input:focus, select:focus {
     outline: none;
 }
 
+.or-separator {
+    text-align: center;
+    margin: 8px 0;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
 /* Button Styles */
 .btn {
     padding: 10px 15px;

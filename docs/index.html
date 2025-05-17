@@ -132,17 +132,19 @@ gtag('config', 'G-X51FE05DVC', { 'anonymize_ip': true});
             </div>
             <div class="form-group">
                 <label for="wifi-password">Password:</label>
-                <!-- Password input field with show/hide button -->
                 <div class="password-container">
-                    <input type="password" id="wifi-password" placeholder="Enter Wi-Fi password">
-                    <button type="button" id="toggle-password">
-                        <!-- Use text or SVG for show/hide icons -->
-                        <span id="password-icon">Show</span>
-                    </button>
-                    <span class="tooltip">Show Password</span>
+                <input type="password" id="wifi-password" placeholder="Enter Wi-Fi password">
+                <button type="button" id="toggle-password">
+                    <span id="password-icon">Show</span>
+                </button>
+                <span class="tooltip">Show Password</span>
                 </div>
             </div>
-            <div class="form-group">
+
+            <details class="additional-details">
+                <summary>Additional Details</summary>
+                
+                <div class="form-group">
                 <label for="encryption-type">Encryption Type:</label>
                 <select id="encryption-type">
                     <option value="WPA">WPA/WPA2/WPA3</option>
@@ -150,14 +152,22 @@ gtag('config', 'G-X51FE05DVC', { 'anonymize_ip': true});
                     <option value="WEP">WEP</option>
                     <option value="None">None</option>
                 </select>
-            </div>
-            <div class="form-group">
+                </div>
+                <div class="form-group">
                 <label><span>Is Hidden?</span><input type="checkbox" id="hidden"></label>
-            </div>
+                </div>
+                <div class="form-group">
+                <label><i class="fa fa-image"></i> Add Logo (Optional):</label>        
+                <input type="text" id="wifi-logo-webaddress" placeholder="Paste logo URL (e.g. https://example.com/logo.png)">      
+                <div class="or-separator">OR</div>     
+                <input type="file" id="wifi-logo-upload" accept="image/*">
+                </div>
+            </details>
+
             <button id="generate-btn" class="btn primary">Generate QR Code</button>
-        </div>
+            </div>
         <div id="print-qr-container" class="print-qr-container">
-          <div id="qr-container" class="qr-container"></div>
+            <div id="qr-container" class="qr-container"></div>
         </div>
         <div class="actions">
             <button id="copy-btn" class="btn secondary">Copy Credentials</button>
