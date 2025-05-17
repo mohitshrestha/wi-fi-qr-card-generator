@@ -1,6 +1,6 @@
 
 <h1 align="center"><img src="assets/media/wifi-solid.svg" width="30" height="30"/> Wi-Fi QR Card Generator </h1>
-<div align="center">
+<div align="left">
   
 <p align="center"><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator" align="center"><img src="assets/media/wifi-solid.svg" width="30" height="30"> Wi-Fi QR Card Generator</a> is a simple web application that generates QR codes for connecting to WiFi networks. Users can scan the QR code to quickly join a network without manually entering the credentials.</p> 
 
