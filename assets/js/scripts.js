@@ -32,6 +32,7 @@ function generateQRCode() {
 
   qrContainer.appendChild(qr.element);
   displayWifiDetails(ssid, password);
+  displayBuildUsing();
 }
 
 // Display WiFi details after QR code is generated
@@ -39,7 +40,7 @@ function displayWifiDetails(ssid, password) {
   const qrContainer = document.getElementById("qr-container");
 
   const wifiDetailsSSID = document.createElement("p");
-  wifiDetailsSSID.textContent = `WiFi Name (SSID): ${ssid}`;
+  wifiDetailsSSID.textContent = `Wi-Fi Name (SSID): ${ssid}`;
   qrContainer.appendChild(wifiDetailsSSID);
 
   // Only show password if visible
@@ -48,6 +49,17 @@ function displayWifiDetails(ssid, password) {
     wifiDetailsPassword.textContent = `Password: ${password}`;
     qrContainer.appendChild(wifiDetailsPassword);
   }
+}
+
+// Display BuildUsing details after QR code is generated
+function displayBuildUsing() {
+  const qrContainer = document.getElementById("qr-container");
+
+  const buildUsingDetails = document.createElement("p");
+  buildUsingDetails.className = "print-card-subtitle";
+  buildUsingDetails.innerHTML = `Generated using <strong><a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/">Wi-Fi QR Card Generator</a></strong> <br> Developed by <a href="https://mohitshrestha.com.np/">Mohit Shrestha</a> <br> Website: <a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/" target="_blank" style="font-size: 13px;">https://mohitshrestha.github.io/wi-fi-qr-card-generator/</a>`;
+
+  qrContainer.appendChild(buildUsingDetails);
 }
 
 // Copy WiFi credentials to clipboard

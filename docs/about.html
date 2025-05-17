@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>wi-fi-qr-card-generator</title>
+<title>About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -98,8 +133,8 @@ gtag('config', 'G-X51FE05DVC', { 'anonymize_ip': true});
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./wi-fi-qr-card-generator.html" aria-current="page"> 
-<span class="menu-text"><i class="fa fa-wifi"></i> Wi-Fi QR Card Generator</span></a>
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
+<span class="menu-text">About <i class="fa fa-wifi"></i> Wi-Fi QR Card Generator</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -116,61 +151,110 @@ gtag('config', 'G-X51FE05DVC', { 'anonymize_ip': true});
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="main-container" id="maincontainer">
-    <div class="card">
-        <p class="card-title"><i class="fa fa-wifi"></i> Wi-Fi QR Card Generator</p>
-        <p class="card-subtitle">Create and share your Wi-Fi Credentials effortlessly</p>
-        <div class="form">
-            <div class="form-group">
-                <label for="wifi-name"><i class="fa fa-wifi"></i> Wi-Fi Name (SSID):</label>
-                <input type="text" id="wifi-name" placeholder="Enter Wi-Fi name">
-            </div>
-            <div class="form-group">
-                <label for="wifi-password">Password:</label>
-                <div class="password-container">
-                    <input type="password" id="wifi-password" placeholder="Enter Wi-Fi password">
-                    <button type="button" id="toggle-password" aria-label="Show Password">
-                        <i class="fa fa-eye"></i> <!-- Font Awesome Eye icon -->
-                    </button>
-                    <span class="tooltip">Show Password</span> <!-- Tooltip for showing/hiding password -->
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="encryption-type">Encryption Type:</label>
-                <select id="encryption-type">
-                    <option value="WPA">WPA/WPA2/WPA3</option>
-                    <option value="WPA2-EAP">WPA2-EAP</option>
-                    <option value="WEP">WEP</option>
-                    <option value="None">None</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label><span>Is Hidden?</span><input type="checkbox" id="hidden"></label>
-            </div>
-            <button id="generate-btn" class="btn primary">Generate QR Code</button>
-        </div>
-        <div id="print-qr-container" class="print-qr-container">
-          <div id="qr-container" class="qr-container"></div>
-        </div>
-        <div class="actions">
-            <button id="copy-btn" class="btn secondary">Copy Credentials</button>
-            <button id="download-btn" class="btn secondary">Download QR Code</button>
-            <button id="print-btn" class="btn secondary">Print QR Code</button>
-        </div>
-    </div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">About</h1>
 </div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<h1 align="center">
+<i class="fa fa-wifi"></i> Wi-Fi QR Card Generator
+</h1>
+<div data-align="center">
+<p align="center">
+<a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator" align="center"><i class="fa fa-wifi"></i> Wi-Fi QR Card Generator</a> is a simple web application that generates QR codes for connecting to Wi-Fi networks. Users can scan the QR code to quickly join a network without manually entering the credentials.
+</p>
+<br>
+<p align="center">
+<img src="https://img.shields.io/github/created-at/mohitshrestha/wi-fi-qr-card-generator"> <img src="https://img.shields.io/github/commit-activity/m/mohitshrestha/wi-fi-qr-card-generator"> <img src="https://img.shields.io/github/forks/mohitshrestha/wi-fi-qr-card-generator"> <img src="https://img.shields.io/github/stars/mohitshrestha/wi-fi-qr-card-generator"> <img src="https://img.shields.io/github/watchers/mohitshrestha/wi-fi-qr-card-generator">
+</p>
+<p><br></p>
+<section id="features" class="level2">
+<h2 class="anchored" data-anchor-id="features">Features</h2>
+<ul>
+<li><strong>Easy-to-Use Interface</strong>: Generate Wi-Fi QR codes card with minimal input.</li>
+<li><strong>Secure Sharing</strong>: Hide sensitive credentials by only sharing the QR code. (Optional)</li>
+<li><strong>Cross-Platform</strong>: Works on all devices with a camera and a QR code scanner.</li>
+<li><strong>Offline Functionality</strong>: The app can run offline, ensuring secure local generation of QR codes.</li>
+</ul>
+</section>
+<section id="live-demo" class="level2">
+<h2 class="anchored" data-anchor-id="live-demo">Live Demo</h2>
+<p>Try it now: <a href="https://mohitshrestha.github.io/wi-fi-qr-card-generator/">Wi-Fi QR Card Generator</a></p>
+</section>
+<section id="installation" class="level2">
+<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<p>If you want to host this project locally:</p>
+<ol type="1">
+<li><p>Clone the repository:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/mohitshrestha/wi-fi-qr-card-generator.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Navigate to the project directory:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> wi-fi-qr-card-generator</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Open the <code>index.html</code> file in your browser to get to the homepage.</p></li>
+<li><p>Open wi-fi-qr-card-generator.html to generate WiFi QR Codes.</p></li>
+</ol>
+</section>
+<section id="how-to-use" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use">How to Use</h2>
+<ol type="1">
+<li>Open the application in your browser.</li>
+<li>Enter your WiFi credentials:
+<ul>
+<li><strong>SSID</strong>: The name of your Wi-Fi network.</li>
+<li><strong>Password</strong>: The password for your network (if applicable).</li>
+<li><strong>Encryption Type</strong>: Select the Encryption type for your Wi-Fi network.</li>
+<li><strong>Hidden</strong>: Select the checkbox True if the network SSID is hidden. (Optional)</li>
+</ul></li>
+<li>Click “Generate QR Code.”</li>
+<li>Scan the QR code with your device to connect to the WiFi network.</li>
+</ol>
+</section>
+<section id="technologies-used" class="level2">
+<h2 class="anchored" data-anchor-id="technologies-used">Technologies Used</h2>
+<ul>
+<li><strong>HTML</strong>: Structure of the application.</li>
+<li><strong>CSS</strong>: Styling for a user-friendly interface.</li>
+<li><strong>JavaScript</strong>: Core logic for generating QR codes.</li>
+<li><strong>QRious library</strong>: QRious simplifies QR code generation.</li>
+</ul>
+</section>
+<section id="contributions" class="level2">
+<h2 class="anchored" data-anchor-id="contributions">Contributions</h2>
+<p>Contributions, issues, and feature requests are welcome!<br>
+Feel free to fork the repository and submit a pull request with your enhancements.</p>
+</section>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>Special thanks to the developers of libraries and tools that make this project possible.</p>
+</section>
+<section id="support-my-work-with-a-coffee" class="level2">
+<h2 class="anchored" data-anchor-id="support-my-work-with-a-coffee">Support my work with a coffee</h2>
+<p><a href="https://ko-fi.com/mohitshrestha" title="https://ko-fi.com/mohitshrestha">Click Here</a> <a href="https://ko-fi.com/mohitshrestha" title="https://ko-fi.com/mohitshrestha"><img src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg" width="30" height="30"></a></p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Website: <a href="https://mohitshrestha.com.np">https://mohitshrestha.com.np</a> Email: <a href="mailto:contact@mohitshrestha.com.np" class="email">contact@mohitshrestha.com.np</a></p>
 <!-- FontAwesome and other JS libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script> <!-- Font Awesome JS -->
-<script src="assets/js/scripts.js"></script> <!-- Our custom JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> <!-- Add QRious library for generating QR codes. -->
 
 
+</section>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -580,7 +664,7 @@ gtag('config', 'G-X51FE05DVC', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator/edit/main/wi-fi-qr-card-generator.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator/edit/main/about.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Made with <a href="https://quarto.org/"><img src="assets/media/quarto.png" alt="Quarto Logo" width="84" height="18"></a><br> <a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator">View the source at GitHub</a></p>
 </div>

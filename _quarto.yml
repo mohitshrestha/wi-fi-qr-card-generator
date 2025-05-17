@@ -10,8 +10,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: wi-fi-qr-card-generator.qmd
-        text: <i class='fa fa-wifi'></i> Wi-Fi QR Card Generator
+      - href: about.qmd
+        text: About <i class='fa fa-wifi'></i> Wi-Fi QR Card Generator
   page-footer:
     background: light
     left: |

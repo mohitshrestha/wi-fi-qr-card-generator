@@ -1,77 +1,77 @@
 [
   {
-    "objectID": "wi-fi-qr-card-generator.html",
-    "href": "wi-fi-qr-card-generator.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "",
     "section": "",
     "text": "Wi-Fi QR Card Generator\n        Create and share your Wi-Fi Credentials effortlessly\n        \n            \n                 Wi-Fi Name (SSID):\n                \n            \n            \n                Password:\n                \n                    \n                    \n                         \n                    \n                    Show Password \n                \n            \n            \n                Encryption Type:\n                \n                    WPA/WPA2/WPA3\n                    WPA2-EAP\n                    WEP\n                    None\n                \n            \n            \n                Is Hidden?\n            \n            Generate QR Code\n        \n        \n          \n        \n        \n            Copy Credentials\n            Download QR Code\n            Print QR Code"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "About",
     "section": "",
     "text": "Wi-Fi QR Card Generator"
   },
   {
-    "objectID": "index.html#features",
-    "href": "index.html#features",
+    "objectID": "about.html#features",
+    "href": "about.html#features",
     "title": "About",
     "section": "Features",
     "text": "Features\n\nEasy-to-Use Interface: Generate Wi-Fi QR codes card with minimal input.\nSecure Sharing: Hide sensitive credentials by only sharing the QR code. (Optional)\nCross-Platform: Works on all devices with a camera and a QR code scanner.\nOffline Functionality: The app can run offline, ensuring secure local generation of QR codes."
   },
   {
-    "objectID": "index.html#live-demo",
-    "href": "index.html#live-demo",
+    "objectID": "about.html#live-demo",
+    "href": "about.html#live-demo",
     "title": "About",
     "section": "Live Demo",
     "text": "Live Demo\nTry it now: Wi-Fi QR Card Generator"
   },
   {
-    "objectID": "index.html#installation",
-    "href": "index.html#installation",
+    "objectID": "about.html#installation",
+    "href": "about.html#installation",
     "title": "About",
     "section": "Installation",
     "text": "Installation\nIf you want to host this project locally:\n\nClone the repository:\ngit clone https://github.com/mohitshrestha/wi-fi-qr-card-generator.git\nNavigate to the project directory:\ncd wi-fi-qr-card-generator\nOpen the index.html file in your browser to get to the homepage.\nOpen wi-fi-qr-card-generator.html to generate WiFi QR Codes."
   },
   {
-    "objectID": "index.html#how-to-use",
-    "href": "index.html#how-to-use",
+    "objectID": "about.html#how-to-use",
+    "href": "about.html#how-to-use",
     "title": "About",
     "section": "How to Use",
     "text": "How to Use\n\nOpen the application in your browser.\nEnter your WiFi credentials:\n\nSSID: The name of your Wi-Fi network.\nPassword: The password for your network (if applicable).\nEncryption Type: Select the Encryption type for your Wi-Fi network.\nHidden: Select the checkbox True if the network SSID is hidden. (Optional)\n\nClick “Generate QR Code.”\nScan the QR code with your device to connect to the WiFi network."
   },
   {
-    "objectID": "index.html#technologies-used",
-    "href": "index.html#technologies-used",
+    "objectID": "about.html#technologies-used",
+    "href": "about.html#technologies-used",
     "title": "About",
     "section": "Technologies Used",
     "text": "Technologies Used\n\nHTML: Structure of the application.\nCSS: Styling for a user-friendly interface.\nJavaScript: Core logic for generating QR codes.\nQRious library: QRious simplifies QR code generation."
   },
   {
-    "objectID": "index.html#contributions",
-    "href": "index.html#contributions",
+    "objectID": "about.html#contributions",
+    "href": "about.html#contributions",
     "title": "About",
     "section": "Contributions",
     "text": "Contributions\nContributions, issues, and feature requests are welcome!\nFeel free to fork the repository and submit a pull request with your enhancements."
   },
   {
-    "objectID": "index.html#acknowledgments",
-    "href": "index.html#acknowledgments",
+    "objectID": "about.html#acknowledgments",
+    "href": "about.html#acknowledgments",
     "title": "About",
     "section": "Acknowledgments",
     "text": "Acknowledgments\nSpecial thanks to the developers of libraries and tools that make this project possible."
   },
   {
-    "objectID": "index.html#support-my-work-with-a-coffee",
-    "href": "index.html#support-my-work-with-a-coffee",
+    "objectID": "about.html#support-my-work-with-a-coffee",
+    "href": "about.html#support-my-work-with-a-coffee",
     "title": "About",
     "section": "Support my work with a coffee",
     "text": "Support my work with a coffee\nClick Here"
   },
   {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
     "text": "Contact\nWebsite: https://mohitshrestha.com.np Email: contact@mohitshrestha.com.np"

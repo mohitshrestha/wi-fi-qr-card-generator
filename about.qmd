@@ -1,8 +1,11 @@
+---
+title: "About"
+---
 
-<h1 align="center"><img src="assets/media/wifi-solid.svg" width="30" height="30"/> Wi-Fi QR Card Generator </h1>
+<h1 align="center"><i class='fa fa-wifi'></i> Wi-Fi QR Card Generator </h1>
 <div align="center">
   
-<p align="center"><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator" align="center"><img src="assets/media/wifi-solid.svg" width="30" height="30"> Wi-Fi QR Card Generator</a> is a simple web application that generates QR codes for connecting to WiFi networks. Users can scan the QR code to quickly join a network without manually entering the credentials.</p> 
+<p align="center"><a href="https://github.com/mohitshrestha/wi-fi-qr-card-generator" align="center"><i class='fa fa-wifi'></i> Wi-Fi QR Card Generator</a> is a simple web application that generates QR codes for connecting to Wi-Fi networks. Users can scan the QR code to quickly join a network without manually entering the credentials.</p> 
 
 <br>
 <p align="center">
@@ -66,18 +69,18 @@ Feel free to fork the repository and submit a pull request with your enhancement
 
 ## Acknowledgments
 
-Special thanks to the developers of libraries and tools that make this project possible.
+Special thanks to the developers of libraries and tools that make this project possible.  
 
 ## Support my work with a coffee
 
 [Click Here](https://ko-fi.com/mohitshrestha "https://ko-fi.com/mohitshrestha") [<img src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg" width="30" height="30"/>](https://ko-fi.com/mohitshrestha "https://ko-fi.com/mohitshrestha")
 
-## Licenses
-
-[Wi-Fi QR Card Generator](https://mohitshrestha.github.io/wi-fi-qr-card-generator/) is distributed under the terms of the [MIT](https://github.com/mohitshrestha/wi-fi-qr-card-generator/blob/main/LICENSE) license.
-
-Copyright © 2025-present [Mohit Shrestha](https://mohitshrestha.com.np/) 
 
 ## Contact
 Website: [https://mohitshrestha.com.np](https://mohitshrestha.com.np)
 Email: <contact@mohitshrestha.com.np>
+
+```{=html}
+<!-- FontAwesome and other JS libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script> <!-- Font Awesome JS -->
+```
