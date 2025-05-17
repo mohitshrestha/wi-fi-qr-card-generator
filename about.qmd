@@ -38,10 +38,9 @@ If you want to host this project locally:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd wi-fi-qr-card-generator
+   cd wi-fi-qr-card-generator/docs
    ```
 3. Open the `index.html` file in your browser to get to the homepage.
-4. Open wi-fi-qr-card-generator.html to generate WiFi QR Codes.
 
 ## How to Use
 
