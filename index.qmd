@@ -14,12 +14,14 @@ navbar: true
             </div>
             <div class="form-group">
                 <label for="wifi-password">Password:</label>
+                <!-- Password input field with show/hide button -->
                 <div class="password-container">
                     <input type="password" id="wifi-password" placeholder="Enter Wi-Fi password">
-                    <button type="button" id="toggle-password" aria-label="Show Password">
-                        <i class="fa fa-eye"></i> <!-- Font Awesome Eye icon -->
+                    <button type="button" id="toggle-password">
+                        <!-- Use text or SVG for show/hide icons -->
+                        <span id="password-icon">Show</span>
                     </button>
-                    <span class="tooltip">Show Password</span> <!-- Tooltip for showing/hiding password -->
+                    <span class="tooltip">Show Password</span>
                 </div>
             </div>
             <div class="form-group">

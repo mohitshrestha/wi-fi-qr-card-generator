@@ -160,6 +160,7 @@ canvas {
     display: flex;
     align-items: center; /* Align vertically at the center */
     width: 100%; /* Ensure it spans the entire container */
+    position: relative;
 }
 
 #wifi-password {
@@ -173,18 +174,21 @@ canvas {
 }
 
 #toggle-password {
-    padding: 5px 10px; /* Adjust padding to fit the icon */
-    font-size: 1.2rem; /* Icon size */
+    background: none;
+    border: 2px solid #6a11cb; /* Add border color and size */
+    border-radius: 5px; /* Optional: rounded corners */
+    font-size: 14px;
     cursor: pointer;
-    background: none; /* Remove button background */
-    border: none; /* Remove button border */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#password-icon {
+    font-size: 1rem;
 }
 
 .tooltip {
-    display: none; /* Initially hide the tooltip */
+    display: none;
     position: absolute;
     background-color: #333;
     color: white;

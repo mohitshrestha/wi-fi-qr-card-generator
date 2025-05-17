@@ -26,7 +26,7 @@ function generateQRCode() {
     element: document.createElement("canvas"),
     value: qrText,
     size: 200,
-    foreground: "#3a7bd5",
+    foreground: "#5c1e88",
     background: "#ffffff",
   });
 
@@ -93,21 +93,19 @@ function downloadQRCode() {
   link.click();
 }
 
-// Toggle the password visibility and tooltip
+// Toggle password visibility
 function togglePasswordVisibility() {
-  const passwordInput = document.getElementById("wifi-password");
-  const icon = this.querySelector('i');
-  const tooltip = this.querySelector('.tooltip');
+    const passwordInput = document.getElementById("wifi-password");
+    const icon = document.getElementById("password-icon");
 
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text"; // Show password
-    icon.classList.replace("fa-eye", "fa-eye-slash");
-    tooltip.textContent = "Hide Password"; // Update tooltip
-  } else {
-    passwordInput.type = "password"; // Hide password
-    icon.classList.replace("fa-eye-slash", "fa-eye");
-    tooltip.textContent = "Show Password"; // Update tooltip
-  }
+    // Toggle password visibility and change the icon
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text"; // Show password
+        icon.textContent = "Hide"; // Change text to "Hide"
+    } else {
+        passwordInput.type = "password"; // Hide password
+        icon.textContent = "Show"; // Change text to "Show"
+    }
 }
 
 // Print the entire webpage
