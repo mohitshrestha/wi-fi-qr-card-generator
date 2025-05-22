@@ -38,8 +38,8 @@ function generateQRCode() {
     // Helper to render QR code with optional logo image
     const renderQRCode = (logoImage = null) => {
         qrCodeInstance = new QRCodeStyling({
-            width: 300, // Set the width and height of the QR code
-            height: 300,
+            width: 200, // Set the width and height of the QR code
+            height: 200,
             type: "svg", // You can choose other types like png, canvas
             data: qrData,
             image: logoImage || null, // Path to your logo image

@@ -46,7 +46,7 @@
     "href": "about.html#technologies-used",
     "title": "About",
     "section": "Technologies Used",
-    "text": "Technologies Used\n\nHTML: Structure of the application.\nCSS: Styling for a user-friendly interface.\nJavaScript: Core logic for generating QR codes.\nQRious library: QRious simplifies QR code generation."
+    "text": "Technologies Used\n\nHTML: Structure of the application.\nCSS: Styling for a user-friendly interface.\nJavaScript: Core logic for generating QR codes.\nQR Code Styling: QR Code Styling An open source JavaScript library simplifies QR code generation."
   },
   {
     "objectID": "about.html#contributions",
