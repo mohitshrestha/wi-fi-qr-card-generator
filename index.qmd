@@ -45,10 +45,26 @@ navbar: true
 
         <div class="form-group">
           <label>Add Logo (Optional):</label>
-          <input type="text" id="wifi-logo-webaddress" placeholder="Paste logo URL (e.g. https://example.com/logo.png)">
-          <div class="or-separator">OR</div>
           <input type="file" id="wifi-logo-upload" accept="image/*">
+          <div class="or-separator">OR</div>
+          <input type="text" id="wifi-logo-webaddress" placeholder="Paste logo URL (e.g. https://example.com/logo.png)">
         </div>
+
+        <div class="form-group">
+            <label>Download QR Code Options:</label>
+            <div class="download-options-container">
+            <!-- Custom Filename and Extension Selector -->
+            <label>Filename (Optional):</label>
+            <input type="text" id="custom-filename" placeholder="Name your QR Code" />
+            <select id="file-extension">
+              <option value="png">PNG</option>
+              <option value="jpeg">JPEG</option>
+              <option value="webp">WEBP</option>
+              <option value="svg">SVG</option>
+            </select>
+          </div>
+        </div>
+
       </details>
 
       <button id="generate-btn" class="btn primary">Generate QR Code</button>
@@ -61,13 +77,14 @@ navbar: true
     <div class="actions">
       <button id="copy-btn" class="btn secondary">Copy Credentials</button>
       <button id="download-btn" class="btn secondary">Download QR Code</button>
+      <button id="export-json-btn" class="btn secondary">Export QR code as JSON</button>
       <button id="print-btn" class="btn secondary">Print QR Code</button>
     </div>
   </div>
 </div>
 
 <!-- Load JS libraries -->
- <script src="assets/js/scripts.js"></script> <!-- Our custom JS -->
+<script src="assets/js/scripts.js"></script> <!-- Our custom JS -->
 <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script> <!-- Add qr-code-styling library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" loading="lazy"></script> <!-- Font Awesome Icons -->
 ```

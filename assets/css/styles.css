@@ -143,6 +143,16 @@ input:focus, select:focus {
 }
 
 /* ------------------------------
+    Download Options Container
+------------------------------- */
+.download-options-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* ------------------------------
    🔘 Buttons
 ------------------------------- */
 .btn {

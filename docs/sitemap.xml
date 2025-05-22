@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mohitshrestha.github.io/wi-fi-qr-card-generator/index.html</loc>
-    <lastmod>2025-05-22T00:58:57.896Z</lastmod>
+    <loc>https://mohitshrestha.github.io/wi-fi-qr-card-generator/regenerate_qr_code_using_json.html</loc>
+    <lastmod>2025-05-22T06:22:31.289Z</lastmod>
   </url>
   <url>
     <loc>https://mohitshrestha.github.io/wi-fi-qr-card-generator/about.html</loc>
     <lastmod>2025-05-22T03:31:36.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitshrestha.github.io/wi-fi-qr-card-generator/index.html</loc>
+    <lastmod>2025-05-22T06:09:12.944Z</lastmod>
   </url>
 </urlset>

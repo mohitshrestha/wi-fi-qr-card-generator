@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "regenerate_qr_code_using_json.html",
+    "href": "regenerate_qr_code_using_json.html",
     "title": "",
     "section": "",
-    "text": "Wi-Fi QR Card Generator\n    Create and share your Wi-Fi Credentials effortlessly\n    \n    \n      \n        Wi-Fi Name (SSID):\n        \n      \n\n      \n        Password:\n        \n          \n          \n            Show\n          \n          Show Password\n        \n      \n\n      \n        Additional Details\n\n        \n          Encryption Type:\n          \n            WPA/WPA2/WPA3\n            WPA2-EAP\n            WEP\n            None\n          \n        \n\n        \n          Is Hidden? \n        \n\n        \n          Add Logo (Optional):\n          \n          OR\n          \n        \n      \n\n      Generate QR Code\n    \n\n    \n      \n    \n\n    \n      Copy Credentials\n      Download QR Code\n      Print QR Code"
+    "text": "Wi-Fi QR Card Generator\n    Create and share your Wi-Fi Credentials effortlessly\n    \n    \n      \n        Import QR Code JSON Config file:\n        \n      \n\n\n      Import QR Code\n    \n\n    \n      \n    \n\n    \n      Print QR Code"
   },
   {
     "objectID": "about.html",
@@ -75,5 +75,12 @@
     "title": "About",
     "section": "Contact",
     "text": "Contact\nWebsite: https://mohitshrestha.com.np Email: contact@mohitshrestha.com.np"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Wi-Fi QR Card Generator\n    Create and share your Wi-Fi Credentials effortlessly\n    \n    \n      \n        Wi-Fi Name (SSID):\n        \n      \n\n      \n        Password:\n        \n          \n          \n            Show\n          \n          Show Password\n        \n      \n\n      \n        Additional Details\n\n        \n          Encryption Type:\n          \n            WPA/WPA2/WPA3\n            WPA2-EAP\n            WEP\n            None\n          \n        \n\n        \n          Is Hidden? \n        \n\n        \n          Add Logo (Optional):\n          \n          OR\n          \n        \n\n        \n            Download QR Code Options:\n            \n            \n            Filename (Optional):\n            \n            \n              PNG\n              JPEG\n              WEBP\n              SVG\n            \n          \n        \n\n      \n\n      Generate QR Code\n    \n\n    \n      \n    \n\n    \n      Copy Credentials\n      Download QR Code\n      Export QR code as JSON\n      Print QR Code"
   }
 ]

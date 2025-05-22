@@ -5,6 +5,7 @@ let qrCodeInstance = null;
 document.getElementById("generate-btn").addEventListener("click", generateQRCode);
 document.getElementById("copy-btn").addEventListener("click", copyCredentials);
 document.getElementById("download-btn").addEventListener("click", downloadQRCode);
+document.getElementById("export-json-btn").addEventListener("click", exportQRCodeAsJSON);
 document.getElementById("print-btn").addEventListener("click", printQRCode);
 document.getElementById("toggle-password").addEventListener("click", togglePasswordVisibility);
 
@@ -70,8 +71,11 @@ function generateQRCode() {
 
         qrCodeInstance.append(qrContainer);
 
+        // Ask user if they want to show the password
+        const showPassword = confirm("Do you want to display the Wi-Fi password?");
+
         // Display SSID and password
-        displayWifiDetails(ssid, password);
+        displayWifiDetails(ssid, password, showPassword);
 
         // Display attribution
         displayBuildUsing();
@@ -113,20 +117,57 @@ function copyCredentials() {
     });
 }
 
-/**
- * Download QR code as PNG
- */
-function downloadQRCode() {
+  /**
+   * Download the Generated QR Code with User-selected Options (extension & filename)
+   */
+  function downloadQRCode() {
     if (!qrCodeInstance) {
-        alert("Please generate a QR code first.");
-        return;
+      alert("Please generate a QR code first.");
+      return;
     }
 
+    // Get user inputs for filename and extension
+    const filename = document.getElementById("custom-filename").value.trim() || "wifi-qr-code";
+    const extension = document.getElementById("file-extension").value;
+
+    // Trigger the download
     qrCodeInstance.download({
-        name: "wifi-qr-code",
-        extension: "png"
+      name: filename, // Custom filename (default is "qr-code")
+      extension: extension, // File extension (selected by user)
     });
-}
+  }
+
+/**
+ * Export QR code configuration options as JSON
+ */
+function exportQRCodeAsJSON() {
+    if (!qrCodeInstance) {
+      alert("Please generate a QR code first.");
+      return;
+    }
+  
+    // Get internal config via manual re-assembly
+    const qrOptions = qrCodeInstance._options || {}; // Warning: _options is internal, may change
+  
+    const jsonString = JSON.stringify(qrOptions, null, 2); // Pretty print JSON
+
+    // Get user inputs for filename
+    const filename = document.getElementById("custom-filename").value.trim() || "qr-code-config";
+
+    // Ensure the filename ends with .json
+    const JSONFilename = filename.endsWith(".json")
+    ? filename
+    : `${filename}.json`;
+  
+    // Trigger file download
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = JSONFilename;
+    link.click();
+    URL.revokeObjectURL(url);
+  }
 
 // Print the entire webpage
 function printQRCode() {
@@ -151,19 +192,29 @@ function togglePasswordVisibility() {
 
 /**
  * Display WiFi details below the QR code
+ * @param {string} ssid - WiFi SSID
+ * @param {string} password - WiFi password
+ * @param {boolean} [showPassword=false] - Whether to show password
  */
-function displayWifiDetails(ssid, password) {
+function displayWifiDetails(ssid, password, showPassword = false) {
     const qrContainer = document.getElementById("qr-container");
 
+    // Clear any previous details
+    const existingSSID = document.querySelector("#qr-container .wifi-ssid");
+    const existingPassword = document.querySelector("#qr-container .wifi-password");
+    if (existingSSID) existingSSID.remove();
+    if (existingPassword) existingPassword.remove();
+
+    // SSID info
     const wifiDetailsSSID = document.createElement("p");
-    wifiDetailsSSID.innerHTML = `
-        Generated using <strong>`;
+    wifiDetailsSSID.className = "wifi-ssid";
     wifiDetailsSSID.textContent = `Wi-Fi Name (SSID): ${ssid}`;
     qrContainer.appendChild(wifiDetailsSSID);
 
-    // Only show password if visible
-    if (document.getElementById("wifi-password").type === "text") {
+    // Show password if allowed
+    if (showPassword && password) {
         const wifiDetailsPassword = document.createElement("p");
+        wifiDetailsPassword.className = "wifi-password";
         wifiDetailsPassword.textContent = `Password: ${password}`;
         qrContainer.appendChild(wifiDetailsPassword);
     }

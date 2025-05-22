@@ -1,0 +1,36 @@
+---
+navbar: true
+---
+
+```{=html}
+<!-- Main container for the Wi-Fi QR Code Generator -->
+<div class="main-container" id="maincontainer">
+  <div class="card">
+    <p class="card-title"><i class='fa fa-wifi'></i> Wi-Fi QR Card Generator</p>
+    <p class="card-subtitle">Create and share your Wi-Fi Credentials effortlessly</p>
+    
+    <div class="form">
+      <div class="form-group">
+        <label for="wifi-name">Import QR Code JSON Config file:</label>
+        <input type="file" id="import-json-input" accept=".json">
+      </div>
+
+
+      <button class="btn primary" onclick="handleImportClick()">Import QR Code</button>
+    </div>
+
+    <div id="print-qr-container" class="print-qr-container">
+      <div id="qr-container" class="qr-container"></div>
+    </div>
+
+    <div class="actions">
+      <button id="print-btn" class="btn secondary">Print QR Code</button>
+    </div>
+  </div>
+</div>
+
+<!-- Load JS libraries -->
+ <script src="assets/js/scripts_v2.js"></script> <!-- Our custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script> <!-- Add qr-code-styling library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" loading="lazy"></script> <!-- Font Awesome Icons -->
+```
