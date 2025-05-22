@@ -58,7 +58,7 @@ If you want to host this project locally:
 - **HTML**: Structure of the application.
 - **CSS**: Styling for a user-friendly interface.
 - **JavaScript**: Core logic for generating QR codes.
-- **QRious library**: QRious simplifies QR code generation.
+- **QR Code Styling**: `QR Code Styling` An open source JavaScript library simplifies QR code generation.
 
 ## Contributions
 
