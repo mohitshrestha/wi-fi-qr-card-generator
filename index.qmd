@@ -3,64 +3,71 @@ navbar: true
 ---
 
 ```{=html}
+<!-- Main container for the Wi-Fi QR Code Generator -->
 <div class="main-container" id="maincontainer">
-    <div class="card">
-        <p class="card-title"><i class='fa fa-wifi'></i> Wi-Fi QR Card Generator</p>
-        <p class="card-subtitle">Create and share your Wi-Fi Credentials effortlessly</p>
-        <div class="form">
-            <div class="form-group">
-                <label for="wifi-name"><i class='fa fa-wifi'></i> Wi-Fi Name (SSID):</label>
-                <input type="text" id="wifi-name" placeholder="Enter Wi-Fi name">
-            </div>
-            <div class="form-group">
-                <label for="wifi-password">Password:</label>
-                <div class="password-container">
-                <input type="password" id="wifi-password" placeholder="Enter Wi-Fi password">
-                <button type="button" id="toggle-password">
-                    <span id="password-icon">Show</span>
-                </button>
-                <span class="tooltip">Show Password</span>
-                </div>
-            </div>
+  <div class="card">
+    <p class="card-title"><i class='fa fa-wifi'></i> Wi-Fi QR Card Generator</p>
+    <p class="card-subtitle">Create and share your Wi-Fi Credentials effortlessly</p>
+    
+    <div class="form">
+      <div class="form-group">
+        <label for="wifi-name">Wi-Fi Name (SSID):</label>
+        <input type="text" id="wifi-name" required placeholder="Enter Wi-Fi name (SSID)">
+      </div>
 
-            <details class="additional-details">
-                <summary>Additional Details</summary>
-                
-                <div class="form-group">
-                <label for="encryption-type">Encryption Type:</label>
-                <select id="encryption-type">
-                    <option value="WPA">WPA/WPA2/WPA3</option>
-                    <option value="WPA2-EAP">WPA2-EAP</option>
-                    <option value="WEP">WEP</option>
-                    <option value="None">None</option>
-                </select>
-                </div>
-                <div class="form-group">
-                <label><span>Is Hidden?</span><input type="checkbox" id="hidden"></label>
-                </div>
-                <div class="form-group">
-                <label><i class="fa fa-image"></i> Add Logo (Optional):</label>        
-                <input type="text" id="wifi-logo-webaddress" placeholder="Paste logo URL (e.g. https://example.com/logo.png)">      
-                <div class="or-separator">OR</div>     
-                <input type="file" id="wifi-logo-upload" accept="image/*">
-                </div>
-            </details>
+      <div class="form-group">
+        <label for="wifi-password">Password:</label>
+        <div class="password-container">
+          <input type="password" id="wifi-password" placeholder="Enter Wi-Fi password">
+          <button type="button" id="toggle-password">
+            <span id="password-icon">Show</span>
+          </button>
+          <span class="tooltip">Show Password</span>
+        </div>
+      </div>
 
-            <button id="generate-btn" class="btn primary">Generate QR Code</button>
-            </div>
-        <div id="print-qr-container" class="print-qr-container">
-            <div id="qr-container" class="qr-container"></div>
+      <details class="additional-details">
+        <summary>Additional Details</summary>
+
+        <div class="form-group">
+          <label for="encryption-type">Encryption Type:</label>
+          <select id="encryption-type">
+            <option value="WPA">WPA/WPA2/WPA3</option>
+            <option value="WPA2-EAP">WPA2-EAP</option>
+            <option value="WEP">WEP</option>
+            <option value="None">None</option>
+          </select>
         </div>
-        <div class="actions">
-            <button id="copy-btn" class="btn secondary">Copy Credentials</button>
-            <button id="download-btn" class="btn secondary">Download QR Code</button>
-            <button id="print-btn" class="btn secondary">Print QR Code</button>
+
+        <div class="form-group">
+          <label><span>Is Hidden?</span> <input type="checkbox" id="hidden"></label>
         </div>
+
+        <div class="form-group">
+          <label>Add Logo (Optional):</label>
+          <input type="text" id="wifi-logo-webaddress" placeholder="Paste logo URL (e.g. https://example.com/logo.png)">
+          <div class="or-separator">OR</div>
+          <input type="file" id="wifi-logo-upload" accept="image/*">
+        </div>
+      </details>
+
+      <button id="generate-btn" class="btn primary">Generate QR Code</button>
     </div>
+
+    <div id="print-qr-container" class="print-qr-container">
+      <div id="qr-container" class="qr-container"></div>
+    </div>
+
+    <div class="actions">
+      <button id="copy-btn" class="btn secondary">Copy Credentials</button>
+      <button id="download-btn" class="btn secondary">Download QR Code</button>
+      <button id="print-btn" class="btn secondary">Print QR Code</button>
+    </div>
+  </div>
 </div>
 
-<!-- FontAwesome and other JS libraries -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script> <!-- Font Awesome JS -->
-<script src="assets/js/scripts.js"></script> <!-- Our custom JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> <!-- Add QRious library for generating QR codes. -->
+<!-- Load JS libraries -->
+ <script src="assets/js/scripts.js"></script> <!-- Our custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script> <!-- Add qr-code-styling library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" loading="lazy"></script> <!-- Font Awesome Icons -->
 ```
